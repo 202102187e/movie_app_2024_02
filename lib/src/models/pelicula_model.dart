@@ -31,6 +31,8 @@ class Pelicula {
   final String releaseDate;
 
   Pelicula({
+    //required this.uniqueId,
+    required this.uniqueId,
     required this.voteCount,
     required this.id,
     required this.video,
@@ -62,7 +64,7 @@ class Pelicula {
       backdropPath: json['backdrop_path'] ?? '',
       adult: json['adult'] ?? false,
       overview: json['overview'] ?? 'Sin descripción',
-      releaseDate: json['release_date'] ?? '',
+      releaseDate: json['release_date'] ?? '', uniqueId: '',
     );
   }
 
